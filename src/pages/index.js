@@ -25,7 +25,7 @@ export default function Home() {
       <Head>
         <title>Happy Birthday</title>
         <meta name="description" content="My mom's birthday" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div
@@ -36,60 +36,49 @@ export default function Home() {
             className={styles.logo}
             src="/mom.jpeg"
             alt="Next.js logo"
+            layout="responsive"
             width={850}
             height={200}
             priority
           />
           <ol>
             <li>
-            <FlyingText/>
-             <Fairy/>
-             
+              <FlyingText />
+              <Fairy />
             </li>
             <li>
-            <Sparkles/>
-
+              <Sparkles />
             </li>
             <br></br>
-            <li>
-            Є тут феєчка - бач вилітує
-
-            </li>
+            <li>Є тут феєчка - бач вилітує</li>
             <li>Розпилює свій чарівницький пилок, що приносить щастя</li>
             <li> Здоровʼя та мир</li>
             <li>
-            <Sparkles/>
+              <Sparkles />
             </li>
-            <FlyingText/>
+            <FlyingText />
             <li className="new">
-            
               І вітає тебе з днем народження!!!!
-             
               <Image
                 src="/hanjoon.png"
                 width={150}
                 height={200}
                 className="pulsating-image"
-              
               />
             </li>
             <li>
-            <Sparkles/>
+              <Sparkles />
             </li>
             <br></br>
-            <li>
-              Отуто є помаранчева кнопочка внизу - тицьни, будь ласка 
-            </li>
-
+            <li>Отуто є помаранчева кнопочка внизу - тицьни, будь ласка</li>
           </ol>
 
           <div className={styles.ctas}>
-            <AudioPlayer/>
-            
+            <AudioPlayer />
+
             <ol>
               <li>
-              <FlyingText/>
-
+                <FlyingText />
               </li>
             </ol>
           </div>
@@ -97,9 +86,9 @@ export default function Home() {
         <footer className={styles.footer}>
           <div className="new-footer">
             <ol>
-            <br></br>
+              <br></br>
               <li>
-              Обіймаю тебе і люблю <PulsatingHeart/>
+                Обіймаю тебе і люблю <PulsatingHeart />
               </li>
               <br></br>
               {/* <Image
@@ -107,11 +96,8 @@ export default function Home() {
                 width={200}
                 height={300}
               /> */}
-              
             </ol>
-           
           </div>
-          
         </footer>
       </div>
     </>
