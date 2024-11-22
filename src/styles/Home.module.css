@@ -21,9 +21,6 @@
     --gray-rgb: 255, 255, 255;
     --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
     --gray-alpha-100: rgba(var(--gray-rgb), 0.06);
-
-    --button-primary-hover: #ccc;
-    --button-secondary-hover: #1a1a1a;
   }
 }
 
@@ -66,28 +63,11 @@
 }
 
 .footer {
-  grid-row-start: 3;
+  grid-row-start: 4;
   display: flex;
   gap: 24px;
 }
 
-.footer a {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.footer img {
-  flex-shrink: 0;
-}
-
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  .footer a:hover {
-    text-decoration: underline;
-    text-underline-offset: 4px;
-  }
-}
 
 @media (max-width: 600px) {
   .page {
@@ -118,9 +98,8 @@
   }
 
   .footer {
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
   }
 }
 
