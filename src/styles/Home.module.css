@@ -30,7 +30,9 @@
 .main {
   display: flex;
   flex-direction: column;
-  background-color: rgba(244, 240, 237, 0.6);
+  background-color: rgba(244, 240, 237, 0.9);
+  border-radius: 10px;
+  border: #128f8f solid 2px;
   gap: 32px;
   grid-row-start: 2;
 }
@@ -121,9 +123,9 @@
     justify-content: center;
   }
 }
-/* 
+
 @media (prefers-color-scheme: dark) {
   .logo {
-    
+    border-radius: 10px;
   }
-} */
+}

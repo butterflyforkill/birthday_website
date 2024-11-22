@@ -5,6 +5,7 @@ import styles from "@/styles/Home.module.css";
 import Fairy from "@/components/Fairy";
 import Sparkles from "@/components/Sparkles";
 import AudioPlayer from "@/components/AudioPlayer";
+import FlyingText from "@/components/FlyingText";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -40,7 +41,7 @@ export default function Home() {
           />
           <ol>
             <li>
-             
+            <FlyingText/>
              <Fairy/>
              
             </li>
@@ -58,8 +59,11 @@ export default function Home() {
             <li>
             <Sparkles/>
             </li>
+            <FlyingText/>
             <li className="new">
+            
               І вітає тебе з днем народження!!!!
+             
               <Image
                 src="/hanjoon.png"
                 width={150}
@@ -80,8 +84,10 @@ export default function Home() {
 
           <div className={styles.ctas}>
             <AudioPlayer/>
+            
             <ol>
               <li>
+              <FlyingText/>
 
               </li>
             </ol>
